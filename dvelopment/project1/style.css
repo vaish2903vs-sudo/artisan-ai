@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7ff;
+    color: #222;
+}
+
+/* NAVBAR */
+
+nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #5b4bdb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    line-height: 1.15;
+}
+
+.hero-text h1 span {
+    color: #5b4bdb;
+}
+
+.hero-text p {
+    margin-top: 25px;
+    font-size: 19px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.hero-text button {
+    margin-top: 30px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    background: #5b4bdb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background: #4939c4;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+    width: 320px;
+    height: 320px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.robot {
+    font-size: 90px;
+}
+
+.hero-card h2 {
+    margin-top: 15px;
+}
+
+.hero-card p {
+    margin-top: 10px;
+    color: #777;
+}
+
+
+/* FEATURES */
+
+.features {
+    padding: 80px 10%;
+    background: white;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 30px 20px;
+    border-radius: 15px;
+    background: #f5f7ff;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.feature-card div {
+    font-size: 40px;
+}
+
+.feature-card h3 {
+    margin: 15px 0 10px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* CHAT */
+
+.chat-section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.chat-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.chat-box {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.messages {
+    height: 400px;
+    padding: 25px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.message {
+    max-width: 75%;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    line-height: 1.5;
+}
+
+.bot {
+    background: #f0efff;
+    color: #333;
+}
+
+.user {
+    background: #5b4bdb;
+    color: white;
+    margin-left: auto;
+}
+
+
+/* INPUT */
+
+.input-area {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    gap: 10px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.input-area button {
+    padding: 0 25px;
+    border: none;
+    border-radius: 10px;
+    background: #5b4bdb;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #222;
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card {
+        width: 280px;
+    }
+}

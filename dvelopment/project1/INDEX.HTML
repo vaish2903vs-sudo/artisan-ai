@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">StudyAI</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#chat">AI Tutor</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+            <h1>Your Personal <span>AI Study Helper</span></h1>
+
+            <p>
+                Understand concepts, solve doubts, summarize notes
+                and prepare for exams with your AI study companion.
+            </p>
+
+            <button onclick="scrollToChat()">
+                Start Studying
+            </button>
+        </div>
+
+        <div class="hero-card">
+            <div class="robot">🤖</div>
+            <h2>Study Smarter</h2>
+            <p>Ask anything about your subjects.</p>
+        </div>
+
+    </section>
+
+
+    <section id="features" class="features">
+
+        <h2>What can StudyAI do?</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <div>💡</div>
+                <h3>Explain Concepts</h3>
+                <p>Get difficult concepts explained in simple language.</p>
+            </div>
+
+            <div class="feature-card">
+                <div>📝</div>
+                <h3>Summarize Notes</h3>
+                <p>Convert long notes into short revision points.</p>
+            </div>
+
+            <div class="feature-card">
+                <div>🎯</div>
+                <h3>Practice Questions</h3>
+                <p>Generate questions to test your preparation.</p>
+            </div>
+
+            <div class="feature-card">
+                <div>📚</div>
+                <h3>Study Assistant</h3>
+                <p>Ask doubts and get instant study guidance.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="chat" class="chat-section">
+
+        <h2>🤖 AI Study Tutor</h2>
+
+        <div class="chat-box">
+
+            <div id="chatMessages" class="messages">
+
+                <div class="message bot">
+                    Hi! 👋 I'm your AI Study Helper.
+                    Ask me anything about your studies!
+                </div>
+
+            </div>
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask a study question..."
+                    onkeydown="handleEnter(event)"
+                >
+
+                <button onclick="sendMessage()">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 StudyAI | Your Personal Study Companion</p>
+    </footer>
+
+    <script src="SCRIPT.JS"></script>
+
+</body>
+</html>

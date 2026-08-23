@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ArtisanAI</title>
+
+    <link rel="stylesheet" href="stle1.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+        <h2>ArtisanAI</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Empowering Artisans
+                <span>with AI</span>
+            </h1>
+
+            <p>
+                Discover markets, predict demand, price products
+                fairly and reach more customers.
+            </p>
+
+            <button onclick="scrollToDashboard()">
+                Get Started
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- DASHBOARD -->
+
+    <section id="dashboard">
+
+        <h1>Producer Dashboard</h1>
+
+        <p class="subtitle">
+            Turn your traditional product into a market-ready product.
+        </p>
+
+
+        <!-- PRODUCT INPUT -->
+
+        <div class="card">
+
+            <h2>📦 Product Information</h2>
+
+            <label>Product Name</label>
+
+            <input
+                type="text"
+                id="productName"
+                placeholder="e.g. Handmade Bamboo Basket"
+            >
+
+
+            <label>Production Cost (₹)</label>
+
+            <input
+                type="number"
+                id="productionCost"
+                placeholder="e.g. 300"
+            >
+
+
+            <label>Product Description</label>
+
+            <textarea
+                id="productDescription"
+                placeholder="Tell us about your product..."
+            ></textarea>
+
+
+            <label>Product Image</label>
+
+            <input
+                type="file"
+                id="productImage"
+                accept="image/*"
+            >
+
+
+            <button onclick="analyzeProduct()">
+                ✨ Analyze Product with AI
+            </button>
+
+        </div>
+
+
+        <!-- FEATURES -->
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <h3>📦 AI Catalogue</h3>
+
+                <p>
+                    Generate a professional product listing.
+                </p>
+
+                <button onclick="generateCatalogue()">
+                    Generate
+                </button>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>💰 Smart Pricing</h3>
+
+                <p>
+                    Get a fair and competitive price.
+                </p>
+
+                <button onclick="calculatePricing()">
+                    Calculate
+                </button>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>📈 Demand Prediction</h3>
+
+                <p>
+                    Understand future demand and seasons.
+                </p>
+
+                <button onclick="predictDemand()">
+                    Predict
+                </button>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>🌍 Market Discovery</h3>
+
+                <p>
+                    Find customers and potential markets.
+                </p>
+
+                <button onclick="discoverMarkets()">
+                    Discover
+                </button>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>📢 AI Marketing</h3>
+
+                <p>
+                    Generate social media and promotional content.
+                </p>
+
+                <button onclick="generateMarketing()">
+                    Generate
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- AI OUTPUT -->
+
+        <div class="card result-card">
+
+            <h2>🤖 AI Insights</h2>
+
+            <div id="result">
+
+                <p>
+                    Your AI-generated insights will appear here.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h1>Why ArtisanAI?</h1>
+
+        <p>
+            Many traditional producers have excellent products
+            but limited access to market intelligence,
+            digital marketing and customers.
+        </p>
+
+        <p>
+            ArtisanAI uses artificial intelligence to bridge
+            this gap and help traditional craftsmanship reach
+            modern markets.
+        </p>
+
+    </section>
+
+
+    <script src="script1.js"></script>
+
+</body>
+
+</html>
