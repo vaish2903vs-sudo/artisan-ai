@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/chat";
+const API_URL = "https://artisan-ai-1-zw4x.onrender.com/api/chat";
 
 
 /* ================================
