@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 console.log("Starting Artisan AI...");
 console.log("API key loaded:", !!process.env.GEMINI_API_KEY);
@@ -104,9 +104,5 @@ Give a simple and practical answer.
 
 
 app.listen(PORT, () => {
-
-    console.log(
-        `\nArtisan AI server running on port ${PORT}`
-    );
-
+    console.log(`Artisan AI server running on port ${PORT}`);
 });
